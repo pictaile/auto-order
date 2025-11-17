@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Form Filler",
+  "version": "1.0",
+  "description": "Автоматическое заполнение формы на сайте",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Auto Fill"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://myigloo.is/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

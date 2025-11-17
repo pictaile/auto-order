@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #fill:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body style="width: 300px; height: 500px; padding: 10px;">
+<h2>Заповніть форму</h2>
+<p>Формат</p>
+<code style="padding: 10px 0;">
+    <pre>
+    [
+      {
+         "email": "some-email2@test.com",
+         "name": "someName2",
+         "password": "SomePas1"
+       }
+    ]
+    </pre>
+
+</code>
+
+
+<textarea id="json" rows="20" cols="50" style="margin:10px 0 0;width: 280px; border-radius: 5px;"></textarea>
+
+<div id="errors" style="font-size: 12px; color: red; padding:4px"></div>
+
+<button
+        id="fill"
+        style="
+        border-radius: 5px;
+         border:1px solid green;
+          margin: 20px 0 20px 0;
+           background: green;
+           color: white;
+           width: 100px;
+           height: 50px;
+           padding: 10px;">
+    >>Запустити</button>
+
+
+<script src="popup.js"></script>
+</body>
+</html>
